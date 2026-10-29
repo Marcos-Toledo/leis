@@ -58,7 +58,7 @@ dependência externa, gerado por `scripts/estatisticas.py`.
 ## Estrutura
 
 ```
-constituicao.md                      Constituição Federal de 1988 (texto vigente, Planalto)
+constituicao.md                      Constituição Federal de 1988 (texto compilado, Planalto; edição/data no cabeçalho)
 federal/
   leis-ordinarias/AAAA/*.md          Leis federais, de 1822 a hoje
   leis-complementares/AAAA/*.md
@@ -91,6 +91,9 @@ registram linha por linha o que não entrou, **estão** versionados.
 Fontes integrais, anexos e recibos necessários para verificar uma inclusão podem ser
 versionados pontualmente, identificados por origem, captura e SHA-256. Isso preserva a
 edição efetivamente consultada quando a fonte muda ou sua conversão exige revisão.
+
+As auditorias registram hashes das dependências de cada lote. Execute os replays no commit
+que publicou o lote, ou use os módulos legados e mapas de leitura quando disponibilizados.
 
 ---
 
@@ -224,7 +227,7 @@ As 1.595 normas cuja data não existe em nenhuma fonte ficam no fim do históric
 
 | UF | Fonte | Texto |
 | --- | --- | --- |
-| — | Planalto | Constituição Federal, texto vigente |
+| — | Planalto | Constituição Federal, texto compilado; edição/data no cabeçalho |
 | Federal | Dados abertos do Senado (índice) + normas.leg.br (texto) | compilado vigente quando existe; senão a publicação original |
 | AC, AL, AM, PB, PI, RO, RR, TO | SAPL das Assembleias (API REST) | PDF anexado, com OCR quando escaneado |
 | AP | e-Legis da Assembleia | texto integral em PDF + Constituição consolidada |
